@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IONTECH Professional Computing Catalog</title>
+  <meta name="description" content="Professional workstations and business computing products with specifications, components and VAT-inclusive pricing.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#153b66">
+  <link rel="canonical" href="">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="./" style="text-decoration:none">
+      <div class="logo-box" data-logo><span>YOUR<br>LOGO</span></div>
+      <div><h1 data-brand>IONTECH</h1><p>Professional Computing Catalog</p></div>
+    </a>
+    <nav class="nav-links">
+      <a href="#catalog">Products</a>
+      <a href="./admin.html">Admin</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="heroSection">
+  <div class="container hero-grid">
+    <div>
+      <div class="kicker" id="heroKicker">Workstations · Business Computing · Thin Clients</div>
+      <h2 id="heroHeading">Find the right professional machine with confidence.</h2>
+      <p id="heroSubheading">Clear specifications, component details, availability and VAT-inclusive pricing in an easy-to-read catalog designed for customers and sales teams.</p>
+      <a class="btn btn-primary" id="heroButton" href="#catalog" style="display:inline-block;text-decoration:none;margin-top:10px">Browse products</a>
+    </div>
+  </div>
+</section>
+
+<section class="toolbar" id="catalog">
+  <div class="container">
+    <div class="toolbar-inner">
+      <input id="search" class="input" type="search" placeholder="Search model, SKU, processor, GPU, RAM, storage...">
+      <select id="category" class="select"><option>All</option></select>
+      <select id="sort" class="select">
+        <option value="model">Sort: Model</option>
+        <option value="priceAsc">Sort: Lowest price</option>
+        <option value="priceDesc">Sort: Highest price</option>
+      </select>
+    </div>
+    <div class="catalog-head">
+      <div><h3 id="productsHeading">Products</h3><p id="productsSubheading">Browse our professional computing lineup.</p><p id="count">Loading…</p></div>
+      <div class="small" id="productsHelper">Click a product for full specifications & components.</div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <div id="grid" class="grid"></div>
+</section>
+</main>
+
+<footer class="footer" id="siteFooter">
+  <div class="container">
+    <strong data-brand>IONTECH</strong>
+    <p id="footerDescription">Professional computing catalog · Prices shown are VAT-inclusive where provided in the source file.</p>
+    <p class="small" style="color:#c9d9e7" id="footerNote">For latest availability and commercial terms, confirm with your sales team.</p>
+  </div>
+</footer>
+
+<div class="modal" id="modal">
+  <div class="modal-box" id="modalContent"></div>
+</div>
+
+<script src="./Data/products.js"></script>
+<script src="./assets/app.js"></script>
+</body>
+</html>
